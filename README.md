@@ -32,7 +32,11 @@ Familarize yourself with align and MT functions
 Alignment([(0, 2), (1, 3), (2, 1), (3, 0)])
 ```
 
+**How to call IBM models in NLTK?**:
 
+```
+
+```
 
 **Example of GDFA and phrase extraction**:
 
