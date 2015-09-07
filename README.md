@@ -35,7 +35,15 @@ Alignment([(0, 2), (1, 3), (2, 1), (3, 0)])
 **How to call IBM models in NLTK?**:
 
 ```
-
+from nltk.align import IBMModel2
+bitext = []
+bitext.append(AlignedSent(['klein', 'ist', 'das', 'haus'], ['the', 'house', 'is', 'small']))
+bitext.append(AlignedSent(['das', 'haus', 'ist', 'ja', 'groß'], ['the', 'house', 'is', 'big']))
+bitext.append(AlignedSent(['das', 'buch', 'ist', 'ja', 'klein'], ['the', 'book', 'is', 'small']))
+bitext.append(AlignedSent(['das', 'haus'], ['the', 'house']))
+bitext.append(AlignedSent(['das', 'buch'], ['the', 'book']))
+bitext.append(AlignedSent(['ein', 'buch'], ['a', 'book']))
+ibm2 = IBMModel2(bitext, 5)
 ```
 
 **Example of GDFA and phrase extraction**:
