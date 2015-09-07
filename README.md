@@ -18,6 +18,8 @@ pip install https://github.com/nltk/nltk.git
 
 **If in Windows**:
 
+http://arunrocks.com/guide-to-install-python-or-pip-on-windows/
+
 ```
 # Start Powershell
 Import-Module BitsTransfer 
