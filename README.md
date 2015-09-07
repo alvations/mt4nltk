@@ -16,6 +16,20 @@ source venv/bin/activate
 pip install https://github.com/nltk/nltk.git
 ```
 
+**If in Windows**:
+
+```
+# Start Powershell
+Import-Module BitsTransfer https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+Import-Module BitsTransfer https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+setx path "%path%,C:\Python27;C:\Python27\Scripts\"
+[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
+python .\ez_setup.py
+python .\get-pip.py
+```
+
+
+
 Familarize yourself with align and MT functions 
 ====
 
