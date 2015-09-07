@@ -20,8 +20,9 @@ pip install https://github.com/nltk/nltk.git
 
 ```
 # Start Powershell
-Import-Module BitsTransfer https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
-Import-Module BitsTransfer https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+Import-Module BitsTransfer 
+BitsTransfer https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+BitsTransfer https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 setx path "%path%,C:\Python27;C:\Python27\Scripts\"
 [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 python .\ez_setup.py
