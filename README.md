@@ -19,6 +19,23 @@ pip install https://github.com/nltk/nltk.git
 Familarize yourself with align and MT functions 
 ====
 
+**The data structures available now in NLTK**:
+
+```
+>>> from nltk.align import AlignedSent
+>>> algnsent = AlignedSent(['klein', 'ist', 'das', 'Haus'], ['the', 'house', 'is', 'small'], '0-2 1-3 2-1 3-0')
+>>> algnsent.words
+['klein', 'ist', 'das', 'Haus']
+>>> algnsent.mots
+['the', 'house', 'is', 'small']
+>>> algnsent.alignment
+Alignment([(0, 2), (1, 3), (2, 1), (3, 0)])
+```
+
+
+
+**Example of GDFA and phrase extraction**:
+
 ```
 $ python
 >>> from nltk.align import phrase_based as pb
