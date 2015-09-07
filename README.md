@@ -21,15 +21,11 @@ Familarize yourself with align and MT functions
 
 ```
 $ python
->>> from nltk.align import phrase_based
+>>> from nltk.align import phrase_based as pb
 >>> srctext = "michael assumes that he will stay in the house"
 >>> trgtext = "michael geht davon aus , dass er im haus bleibt"
 >>> alignment = [(0,0), (1,1), (1,2), (1,3), (2,5), (3,6), (4,9), (5,9), (6,7), (7,7), (8,8)]
->>> phrases = phrase_extraction(srctext, trgtext, alignment)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'phrase_extraction' is not defined
->>> phrases = phrase_based.phrase_extraction(srctext, trgtext, alignment)
+>>> phrases = pb.phrase_extraction(srctext, trgtext, alignment)
 >>> for i in phrases:
 ...     print i
 ... 
