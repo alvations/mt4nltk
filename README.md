@@ -3,7 +3,9 @@
 Getting Started
 ====
 
-TL;DR
+Refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ to setup a virtual environment.
+
+**TL;DR**
 
 ```
 pip install virtualenv
