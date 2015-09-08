@@ -158,6 +158,7 @@ So after the warm exercises, there's a few things that we can work on in paralle
  - GDFA currently takes in strings, change it to take `AlignedSent` instead
    -  Solution 1: Make GDFA take 2 `AlignedSent` (one forward and one backwards) and then return a single `AlignedSent` object with GDFA-ed alignments (https://github.com/nltk/nltk/blob/develop/nltk/align/gdfa.py)
    -  Solution 2: Make an extract variable in `AlignedSent` call `AlignedSent.backwards_alignments` where it stores the backwards alignments.
+ - set a maximum to length of extracted phrases (http://stackoverflow.com/questions/25109001/phrase-extraction-algorithm-for-statistical-machine-translation)
    
 
 **Challenging theory/coding**:
