@@ -1,6 +1,6 @@
 # mt4nltk
 
-Getting Started
+Day 1: Getting Started
 ====
 
 Refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ to setup a virtual environment.
@@ -107,6 +107,9 @@ You should see the output:
 ((3, 9), (6, 10), 'he will stay in the house', 'er im haus bleibt')
 ```
 ----
+
+Day 2: Getting down to work
+====
 
 So after the warm exercises, there's a few things that we can work on in parallel
  
