@@ -139,6 +139,7 @@ So after the warm exercises, there's a few things that we can work on in paralle
  - Build a function that learns a lexical reordering model.
 
 
+----
 
 Now let's start forking the code from NLTK and then git clone our own repository:
 
