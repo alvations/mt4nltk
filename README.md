@@ -1,8 +1,8 @@
 # mt4nltk
 
-Goal: Improving MT capabilities in NLTK towards generating a phrase-table.
+**Goal**: Improving MT capabilities in NLTK towards generating a phrase-table.
 
-Contributors:
+**Contributors**:
  
 
 
