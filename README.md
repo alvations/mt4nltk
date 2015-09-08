@@ -1,5 +1,7 @@
 # mt4nltk
 
+Improving MT capabilities in NLTK towards generating a phrase-table.
+
 Day 1: Getting Started
 ====
 
