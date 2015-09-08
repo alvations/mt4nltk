@@ -151,7 +151,8 @@ Now let's start forking the code from NLTK and then git clone our own repository
  
 
 ```
-pip install virtualenv
+# pip install virtualenv
+rm -ref mt4nltk
 mkdir mt4nltk
 cd mt4nltk
 virtualenv -p /usr/bin/python2.7 venv
