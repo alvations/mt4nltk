@@ -106,4 +106,49 @@ You should see the output:
 ((2, 4), (5, 7), 'that he', ', dass er')
 ((3, 9), (6, 10), 'he will stay in the house', 'er im haus bleibt')
 ```
+----
+
+So after the warm exercises, there's a few things that we can work on in parallel
+ 
+**Pythonic Work**:
+ 
+ - Get phrase-extraction code to take in an `AlignedSent` object instead of the current input parameters and create an output object call `AlignedPhrases` (make the abstract objects in `nltk.align.api`)
+ - GDFA currently takes in strings, change it to take `AlignedSent` instead
+   -  Solution 1: Make GDFA take 2 `AlignedSent` (one forward and one backwards) and then return a single `AlignedSent` object with GDFA-ed alignments (https://github.com/nltk/nltk/blob/develop/nltk/align/gdfa.py)
+   -  Solution 2: Make an extract variable in `AlignedSent` call `AlignedSent.backwards_alignments` where it stores the backwards alignments.
+   
+ 
+
+**Phrase table Probabilities assignment**:
+
+ - GDFA: http://www.statmt.org/moses/RELEASE-3.0/models/de-en/model/aligned.1.grow-diag-final-and
+ - DE: http://www.statmt.org/moses/RELEASE-3.0/models/de-en/corpus/europarl.clean.1.de
+ - EN: http://www.statmt.org/moses/RELEASE-3.0/models/de-en/corpus/europarl.clean.1.en
+ 
+**Lexical reordering training**:
+
+ - Build a function that learns a lexical reordering model.
+
+
+
+Now let's start forking the code from NLTK and then git clone our own repository:
+
+ - First create an account on [Github](https://github.com/) (if you haven't have one)
+ - Then, go to https://github.com/nltk/nltk and fork the NLTK repo into your own github
+ - Then go to your github NLTK repo page: https://github.com/<your_username>/nltk
+ - Copy the clone URL
+ - Now let's reset the environment and then git checkout the new branch or if it's TL;DR, then follow the instructions below
+ 
+
+```
+pip install virtualenv
+mkdir mt4nltk
+cd mt4nltk
+virtualenv -p /usr/bin/python2.7 venv
+source venv/bin/activate
+git clone https://github.com/<your_username>/nltk.git
+python setup.py
+```
+
+----
 
