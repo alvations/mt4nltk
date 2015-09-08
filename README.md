@@ -201,3 +201,10 @@ python setup.py
 
 ----
 
+Converting strings to tuples:
+
+```
+def gdfa_str_to_tuple(gdfa_str):
+	return [tuple(map(int,i.split('-'))) for i in gdfa_str.strip().split()]
+
+```
