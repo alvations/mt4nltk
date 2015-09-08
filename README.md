@@ -165,7 +165,7 @@ Now let's start forking the code from NLTK and then git clone our own repository
 
  - First create an account on [Github](https://github.com/) (if you haven't have one)
  - Then, go to https://github.com/nltk/nltk and fork the NLTK repo into your own github
- - Then go to your github NLTK repo page: https://github.com/<your_username>/nltk
+ - Then go to your github NLTK repo page: https://github.com/your_username/nltk
  - Copy the clone URL
  - Now let's reset the environment and then git checkout the new branch or if it's TL;DR, then follow the instructions below
  
