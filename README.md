@@ -70,6 +70,19 @@ bitext.append(AlignedSent(['ein', 'buch'], ['a', 'book']))
 ibm2 = IBMModel2(bitext, 5)
 ```
 
+Outputs:
+
+```
+>>> test_sentence = bitext[2]
+>>> test_sentence.words
+['das', 'buch', 'ist', 'ja', 'klein']
+>>> test_sentence.mots
+['the', 'book', 'is', 'small']
+>>> test_sentence.alignment
+Alignment([(0, 0), (1, 1), (2, 2), (3, 2), (4, 3)])
+```
+
+
 **Example of GDFA**
 
 ```
