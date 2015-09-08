@@ -70,7 +70,27 @@ bitext.append(AlignedSent(['ein', 'buch'], ['a', 'book']))
 ibm2 = IBMModel2(bitext, 5)
 ```
 
-**Example of GDFA and phrase extraction**:
+**Example of GDFA**
+
+```
+forw = ('0-0 2-1 9-2 21-3 10-4 7-5 11-6 9-7 12-8 1-9 3-10 4-11 17-12 17-13 25-14 13-15 24-16 11-17 28-18')
+back = ('0-0 1-9 2-9 3-10 4-11 5-12 6-6 7-5 8-6 9-7 10-4 11-6 12-8 13-12 15-12 17-13 18-13 19-12 20-13 21-3 22-12 23-14 24-17 25-15 26-17 27-18 28-18')
+srctext = ("この よう な ハロー 白色 わい 星 の Ｌ 関数 は Ｌ と 共 に 不連続 に 増加 する こと が 期待 さ れる こと を 示し た 。")
+trgtext = ("Therefore , we expect that the luminosity function of such halo white dwarfs increases discontinuously with the luminosity .")
+srclen = len(srctext.split())
+trglen = len(trgtext.split())
+gdfa = grow_diag_final_and(srclen, trglen, forw, back)
+print gdfa
+```
+
+And that outputs:
+
+```
+set([(28, 18), (6, 6), (24, 17), (2, 1), (15, 12), (13, 12),
+(2, 9), (3, 10), (26, 17), (25, 15), (8, 6), (9, 7), (20,13), (18, 13), (0, 0), (10, 4), (13, 15), (23, 14), (7, 5),(25, 14), (1, 9), (17, 13), (4, 11), (11, 17), (9, 2), (22,12), (27, 18), (24, 16), (21, 3), (19, 12), (17, 12), (5,12), (11, 6), (12, 8)])
+```
+
+**Example of phrase extraction**:
 
 ```
 $ python
