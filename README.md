@@ -146,6 +146,10 @@ So after the warm exercises, there's a few things that we can work on in paralle
    -  Solution 1: Make GDFA take 2 `AlignedSent` (one forward and one backwards) and then return a single `AlignedSent` object with GDFA-ed alignments (https://github.com/nltk/nltk/blob/develop/nltk/align/gdfa.py)
    -  Solution 2: Make an extract variable in `AlignedSent` call `AlignedSent.backwards_alignments` where it stores the backwards alignments.
    
+
+**Challenging theory/coding**:
+
+ - `nltk.aligned.phrase_based.phrase_extraction()` now allows unlimited phrase length. Try to put a maximum of 7 to it.
  
 
 **Phrase table Probabilities assignment**:
